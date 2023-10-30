@@ -1,0 +1,30 @@
+hr {
+    height: 1px; /* Establece la altura deseada en píxeles */
+    width: 50%;
+    background-color: black; /* Cambia el color de la línea si lo deseas */
+    border: none; /* Elimina cualquier borde o línea punteada predeterminada */
+}
+
+#nombre {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-image: url("IMG_8605.JPG");
+    background-size: cover;
+    background-position: center;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+#mistrabajos {
+    background-color: rgb(248, 248, 248);
+}
+
+#sobremi {
+    background-color: rgb(48, 48, 48);
+    color:white;
+}
+
+#sobremi h2{
+    color: orange;
+}
