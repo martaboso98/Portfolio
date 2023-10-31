@@ -13,6 +13,7 @@ hr {
     background-position: center;
     font-size: 24px;
     padding: 20px;
+    text-align: center;
 }
 
 #mistrabajos {
@@ -29,7 +30,59 @@ hr {
     color: orange;
 }
 
-.trabajos {
-    width: 20%;
-    background-color: black;
+h2{
+    text-align: center;
 }
+
+.trabajos {
+    background-color: black;
+    width: 90%; 
+}
+
+.imagenes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-container {
+    /*Ajusta el ancho del contenedor de cada imagen*/
+    width: 28%;
+    position: relative;
+}
+
+/*Transición imágenes mis trabajos*/
+.image:hover {
+    filter: opacity(.5);
+}
+
+/*Para cuando haga hover aparezca haz click*/
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+}
+
+.image-container:hover .hover-text {
+    display: block;
+}
+/*Fin transiciones*/
+
+@media (max-width: 902px) {
+    .imagenes {
+        display: block; /*Vertical*/
+    }
+    
+    .image-container {
+        width: 80%; 
+        margin-bottom: 20px;
+        margin: 0 auto; /*Centra horizontalmente*/
+    }
+}
+
