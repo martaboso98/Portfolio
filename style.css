@@ -1,23 +1,23 @@
 hr {
-    height: 1px; /* Establece la altura deseada en píxeles */
+    height: 1px; 
     width: 50%;
-    background-color: black; /* Cambia el color de la línea si lo deseas */
-    border: none; /* Elimina cualquier borde o línea punteada predeterminada */
+    background-color: black; /*Color de la línea*/
+    border: none; /*Elimina borde o línea predeterminada*/
 }
 
 #nombre {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    margin: 0; /*Elimina el margen*/
+    padding: 0; /*Elimina el relleno*/
     background-image: url("IMG_8605.JPG");
     background-size: cover;
     background-position: center;
     font-size: 24px;
-    text-align: center;
     padding: 20px;
 }
 
 #mistrabajos {
     background-color: rgb(248, 248, 248);
+    text-align: center;
 }
 
 #sobremi {
@@ -27,4 +27,9 @@ hr {
 
 #sobremi h2{
     color: orange;
+}
+
+.trabajos {
+    width: 20%;
+    background-color: black;
 }
