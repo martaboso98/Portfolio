@@ -1,19 +1,67 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
 hr {
     height: 1px; 
     width: 50%;
-    background-color: black; /*Color de la línea*/
+    background-color: white; /*Color de la línea*/
     border: none; /*Elimina borde o línea predeterminada*/
 }
 
+h1{
+    font-size: 50px;
+}
+
 #nombre {
-    margin: 0; /*Elimina el margen*/
-    padding: 0; /*Elimina el relleno*/
+    height: 950px;
     background-image: url("IMG_8605.JPG");
     background-size: cover;
     background-position: center;
     font-size: 24px;
     padding: 20px;
     text-align: center;
+    color: white;
+    display: flex;
+}
+
+/*Que no se mueva y esté por encima*/
+header {
+    position:fixed;
+    z-index: 1; 
+    width: 100%;
+}
+
+/*Que sea full-screen*/
+.wrap {
+    width: 90%;
+    max-width: 1150px;
+    margin:auto;
+}
+
+#nombre h3 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.logo {
+    width: 3%;
+    height: auto;
+    margin-right: 2%;
 }
 
 #mistrabajos {
@@ -27,7 +75,7 @@ hr {
 }
 
 #sobremi h2{
-    color: orange;
+    color: rgb(255, 153, 0);
 }
 
 h2{
@@ -43,6 +91,13 @@ h2{
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+.datos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
 }
 
 .image-container {
@@ -84,5 +139,9 @@ h2{
         margin-bottom: 20px;
         margin: 0 auto; /*Centra horizontalmente*/
     }
+}
+
+.yo {
+    width: 30%;
 }
 

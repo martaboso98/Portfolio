@@ -5,50 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header></header>
 
     <section id="presentacion">
-        <div class="overlay">
-            <article id="nombre">
+        <article id="nombre">
+            <div class="wrap">
                 <h1>MARTA BORREGUERO SORIA</h1>
                 <h3>¡Hola! Mi nombre es Marta Borreguero Soria y vivo en Sevilla (España). Soy desarrolladora web y comunicadora audiovisual.</h3>
                 <p>Trabajo con HTML, CSS, JavaScript, PHP, MySQL y Java.</p>
                 <div class="logos">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
+                    <a href="https://www.linkedin.com/in/marta-borreguero-soria-28641a1a5/"><img src="lk.png" class="logo"></a>
+                    <a href="https://www.facebook.com/martaboso98"><img src="fb.png" class="logo"></a>
+                    <a href="https://www.instagram.com/martaboso98/"><img src="insta.png" class="logo"></a>
+                    <a href="https://github.com/martaboso98"><img src="github.png" class="logo"></a>
                 </div>
                 <hr>
                 <div class="datos">
-                    <p>MIS TRABAJOS</p>
-                    <p>SOBRE MÍ</p>
-                    <p>CONTACTO</p>
-                    <p>GITHUB</p>
-                </div>
-            
-        </div>
-        <article id="mistrabajos">
-            <h2>Mis trabajos recientes</h2>
-            <p>Aquí están algunos de mis trabajos. Si quieres ver más, contacta conmigo.</p>
-            <div class="imagenes">
-                <div class="image-container">
-                    <a href="https://github.com/martaboso98/rutinasgymjava/"><img src="profit.png" class="trabajos image"></a>
-                    <div class="hover-text">Haz click</div>
-                </div>
-                <div class="image-container">
-                    <a href="https://github.com/martaboso98/portfolio_web"><img src="miweb.PNG" class="trabajos image"></a>
-                    <div class="hover-text">Haz click</div>
-                </div>
-                <div class="image-container">
-                    <a href="https://github.com/olga3emes/IIernaStaff"><img src="ilernastaff.PNG" class="trabajos image"></a>
-                    <div class="hover-text">Haz click</div>
+                    <a href="#mistrabajos"><p>MIS TRABAJOS</p></a>
+                    <a href="#sobremi"><p>SOBRE MÍ</p></a>
+                    <a href="#contacto"><p>CONTACTO</p></a>
+                    <a href="https://github.com/martaboso98"><p>GITHUB</p></a>
                 </div>
             </div>
         </article>
+            
+        <article id="mistrabajos">
+            <div class="wrap">
+                <h2>Mis trabajos recientes</h2>
+                <p>Aquí están algunos de mis trabajos. Si quieres ver más, contacta conmigo.</p>
+                <div class="imagenes">
+                    <div class="image-container">
+                        <a href="https://github.com/martaboso98/rutinasgymjava/"><img src="profit.png" class="trabajos image"></a>
+                        <div class="hover-text">Haz click</div>
+                    </div>
+                    <div class="image-container">
+                        <a href="https://github.com/martaboso98/portfolio_web"><img src="miweb.PNG" class="trabajos image"></a>
+                        <div class="hover-text">Haz click</div>
+                    </div>
+                    <div class="image-container">
+                        <a href="https://github.com/olga3emes/IIernaStaff"><img src="ilernastaff.PNG" class="trabajos image"></a>
+                        <div class="hover-text">Haz click</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
         <article id="sobremi">
             <h2>Más sobre mí</h2>
             <p>En mi tiempo libre me gusta dibujar, ir al gimnasio, pasear, salir con mis amigos...</p>
@@ -57,9 +64,16 @@
     </section>
 
     <section id="contacto">
-        <article>
-            <h2>Contacto</h2>
-        </article>
+        <div class="overlay">
+            <article>
+                <h2>Contacto</h2>
+                <h3>Si quieres contactar conmigo para un proyecto, no dudes en hablarme. </h3>
+                <img src="yo-01.png" class="yo">
+                <form>
+
+                </form>
+            </article>
+        </div>
     </section>
 
     <footer></footer>
