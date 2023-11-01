@@ -67,6 +67,19 @@ a {
 #mistrabajos {
     background-color: rgb(248, 248, 248);
     text-align: center;
+    height: 950px;
+    padding: 30px;
+    display: flex;
+}
+
+.wrap2 {
+    width: 90%;
+    max-width: 1920px;
+    margin:auto;
+}
+
+#mistrabajos h2 {
+    font-size: 40px; 
 }
 
 #sobremi {
@@ -84,7 +97,7 @@ h2{
 
 .trabajos {
     background-color: black;
-    width: 90%; 
+    width: 90%;
 }
 
 .imagenes {
@@ -92,6 +105,10 @@ h2{
     width: 100%;
     justify-content: center;
 }
+
+/*Colocar imágenes*/
+
+
 
 .datos {
     display: flex;
@@ -102,13 +119,15 @@ h2{
 
 .image-container {
     /*Ajusta el ancho del contenedor de cada imagen*/
-    width: 28%;
+    width: 100%;
     position: relative;
+    transition: transform 0.3s ease-in-out;
 }
 
 /*Transición imágenes mis trabajos*/
 .image:hover {
     filter: opacity(.5);
+    transform: scale(1.1);
 }
 
 /*Para cuando haga hover aparezca haz click*/
