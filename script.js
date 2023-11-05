@@ -14,6 +14,9 @@ faceWithoutEyes.src = "yoSinOjos.png";
 //Iremos actualizando los valores
 const mousePosition = {x:0, y:0};
 
+//Radio de los ojos
+const eyeRadius = 
+
 //Redimensionar el canvas
 function resizeCanvas () {
     canvas.width = window.innerWidth; //Ancho interno de la pantalla
