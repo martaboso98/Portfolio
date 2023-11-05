@@ -167,3 +167,6 @@ h2{
     width: 30%;
 }
 
+canvas {
+    background-color: grey;
+}
