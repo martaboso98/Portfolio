@@ -109,10 +109,6 @@ h2{
     justify-content: center;
 }
 
-/*Colocar imágenes*/
-
-
-
 .datos {
     display: flex;
     width: 100%;
@@ -163,10 +159,7 @@ h2{
     }
 }
 
-.yo {
-    width: 30%;
+#contacto h2 {
+    text-align: center;
 }
 
-canvas {
-    background-color: grey;
-}
