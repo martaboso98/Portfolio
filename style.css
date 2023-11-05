@@ -159,7 +159,12 @@ h2{
     }
 }
 
+#contacto {
+    height: 650px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
 #contacto h2 {
     text-align: center;
 }
-

@@ -20,13 +20,13 @@ const eyeRadius = 10;
 function resizeCanvas () {
     canvas.width = window.innerWidth * 0.7; //Ancho interno de la pantalla
     canvas.height = window.innerHeight * 0.7; 
-    context.height = canvas.height; //Resolución
-    context.width = canvas.width;
+    context.height = canvas.height/2; //Resolución
+    context.width = canvas.width/2;
     render();
 }
 
 function drawFaceWithoutEyes () {
-    const x = canvas.width * 0.7 - faceWithoutEyes.width/2; //Para ponerlo en medio
+    const x = canvas.width * 0.63 - faceWithoutEyes.width/2; //Para ponerlo en medio
     const y = canvas.height/2 - faceWithoutEyes.height/2;
     context.drawImage(faceWithoutEyes, x, y);
 }
@@ -57,11 +57,11 @@ function getTranslatePosition(eyePosition){
 function drawEyes () {
     const eyeOriginPositions = [ //Colocarlo donde yo quiera manualmente
         {
-            x:canvas.width * 0.7 - 58,
+            x:canvas.width * 0.63 - 58,
             y:canvas.height/2 
         },
         {
-            x:canvas.width * 0.7 + 60,
+            x:canvas.width * 0.63 + 60,
             y:canvas.height/2
         }
     ];
