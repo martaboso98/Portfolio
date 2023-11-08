@@ -168,3 +168,18 @@ h2{
 #contacto h2 {
     text-align: center;
 }
+
+footer {
+    background-color: rgb(48, 48, 48);
+    color:white;
+    text-align: center;
+    padding: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 1%;
+}
