@@ -12,13 +12,15 @@ body {
 }
 
 hr {
-    height: 1px; 
+    height: 1px;
     width: 50%;
-    background-color: white; /*Color de la línea*/
-    border: none; /*Elimina borde o línea predeterminada*/
+    background-color: white;
+    /*Color de la línea*/
+    border: none;
+    /*Elimina borde o línea predeterminada*/
 }
 
-h1{
+h1 {
     font-size: 50px;
 }
 
@@ -36,8 +38,8 @@ h1{
 
 /*Que no se mueva y esté por encima*/
 header {
-    position:fixed;
-    z-index: 1; 
+    position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
@@ -45,7 +47,7 @@ header {
 .wrap {
     width: 90%;
     max-width: 1150px;
-    margin:auto;
+    margin: auto;
 }
 
 #nombre h3 {
@@ -54,7 +56,7 @@ header {
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .logo {
@@ -65,7 +67,6 @@ a {
 
 #mistrabajos {
     text-align: center;
-    height: 650px;
     padding: 30px;
     display: flex;
     margin-bottom: 100px;
@@ -74,11 +75,11 @@ a {
 .wrap2 {
     width: 90%;
     max-width: 1920px;
-    margin:auto;
+    margin: auto;
 }
 
 #mistrabajos h2 {
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 #mistrabajos p {
@@ -87,14 +88,14 @@ a {
 
 #sobremi {
     background-color: rgb(48, 48, 48);
-    color:white;
+    color: white;
 }
 
-#sobremi h2{
+#sobremi h2 {
     color: rgb(255, 153, 0);
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -145,23 +146,25 @@ h2{
 .image-container:hover .hover-text {
     display: block;
 }
+
 /*Fin transiciones*/
 
 @media (max-width: 902px) {
     .imagenes {
-        display: block; /*Vertical*/
+        display: block;
+        /*Vertical*/
     }
-    
+
     .image-container {
-        width: 80%; 
+        width: 80%;
         margin-bottom: 20px;
-        margin: 0 auto; /*Centra horizontalmente*/
+        margin: 0 auto;
+        /*Centra horizontalmente*/
     }
 }
 
 #contacto {
     padding: 20px;
-    height: 650px;
 }
 
 #contacto h2 {
@@ -174,19 +177,95 @@ h2{
 
 .textoContacto {
     width: 40%;
-    margin-left: 8%; /* Ajusta el margen entre los elementos según sea necesario */
-    text-align:start;
-}
-
-.formulario {
-    width: 40%;
-    margin: 0; /* Ajusta el margen entre los elementos según sea necesario */
+    margin-left: 8%;
+    /* Ajusta el margen entre los elementos según sea necesario */
+    text-align: start;
 }
 
 .dibujo {
     width: 80%;
-    margin-left: -6%;
+    margin-left: -8%;
 }
+
+/* Formulario */
+
+.formulario {
+    width: 40%;
+    font-size: 28px;
+    text-align: start;
+    margin-left: -2%;
+    font-weight: bold;
+}
+
+.elem-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.elem-group input[type="text"],
+.elem-group input[type="email"] { 
+    border: none;
+    border-bottom: 2px solid #000; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+    width: 70%; 
+    background: transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+.elem-group textarea {
+    width: 66%;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+}
+
+.botonEnviar {
+    color: rgb(255, 153, 0);
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+@media (max-width: 902px) {
+    
+    .formulario {
+        width: 20%;
+        font-size: 20px;
+        text-align: start;
+        margin: auto;
+        font-weight:300;
+    }
+    
+    .elem-group input[type="text"],
+    .elem-group input[type="email"] { 
+        border: none;
+        border-bottom: 1px solid #000; 
+        padding-bottom: 5px; 
+        margin-bottom: 15px; 
+        width: 70%; 
+        background: transparent;
+        transition: border-bottom-color 0.3s;
+    }
+    
+    .elem-group textarea {
+        width: 66%;
+        height: 60px; /* Ajusta la altura según tus necesidades */
+        padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+    }
+    
+    .botonEnviar {
+        color: rgb(255, 153, 0);
+        border: none;
+        background: transparent;
+        font-size: 20px;
+        margin-top: 1%;
+        font-weight:300;
+    }
+}
+
+/* Fin formulario */
 
 .contactar {
     display: flex;
@@ -205,14 +284,41 @@ canvas {
 }
 
 @media (max-width: 902px) {
+    
+    #contacto h3 {
+        font-size: 25px;
+    }
+    
+    .textoContacto {
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+    }
+    
+    .formulario {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .dibujo {
+        width: 100%;
+        margin: 0;
+        margin-top: -15%;
+    }
+    
+    .contactar {
+        display: block;
+    }
+    
     canvas {
-        width: 30%;
+        width: 50%;
+        height: 50%;
     }
 }
 
 footer {
     background-color: rgb(48, 48, 48);
-    color:white;
+    color: white;
     text-align: center;
     padding: 2%;
 }
