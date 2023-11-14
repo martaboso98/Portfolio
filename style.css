@@ -160,9 +160,8 @@ h2{
 }
 
 #contacto {
-    text-align: center;
-    height: 550px;
     padding: 20px;
+    height: 650px;
 }
 
 #contacto h2 {
@@ -173,17 +172,26 @@ h2{
     font-size: 40px;
 }
 
-.wrap3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1900px; /* Ajusta el ancho máximo según tu diseño */
-    margin: 0 auto;
+.textoContacto {
+    width: 40%;
+    margin-left: 8%; /* Ajusta el margen entre los elementos según sea necesario */
+    text-align:start;
 }
 
-.wrap3 div {
-    flex: 1;
+.formulario {
+    width: 40%;
+    margin: 0; /* Ajusta el margen entre los elementos según sea necesario */
+}
+
+.dibujo {
+    width: 80%;
+    margin-left: -6%;
+}
+
+.contactar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {

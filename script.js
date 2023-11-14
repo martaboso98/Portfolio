@@ -28,7 +28,7 @@ function resizeCanvas () {
 function drawFaceWithoutEyes () {
     const x = canvas.width/2 - faceWithoutEyes.width/2; //Para ponerlo en medio
     const y = canvas.height/2 - faceWithoutEyes.height/2;
-    context.drawImage(faceWithoutEyes, x, y, 700, 700);
+    context.drawImage(faceWithoutEyes, x, y);
 }
 
 //Fórmula para calcular la distancia entre dos puntos
