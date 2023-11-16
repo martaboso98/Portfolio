@@ -1,0 +1,40 @@
+body {
+  color: blue;
+}
+
+.menuFooter {
+  margin: 3px;
+}
+
+.titulos {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 4px;
+  margin: 20px;
+}
+
+.golden {
+  background-color: red;
+}
+.golden a {
+  color: white;
+}
+.golden p {
+  font-weight: 500;
+}
+
+.message {
+  border: 1px solid red;
+  padding: 10px;
+  color: white;
+}
+
+.message {
+  border-color: green;
+}
+
+.article {
+  width: 200%;
+}

@@ -1,0 +1,54 @@
+@use 'components/_margen';
+@use 'sass:math';
+
+body {
+    color: blue;
+}
+
+@import "components/footer";
+
+//Mixing
+
+@mixin large-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.titulos {
+    @include large-text;
+    padding: 4px;
+    margin: 20px;
+}
+
+//Nesting
+
+.golden {
+    a {
+        color: white;
+    }
+    background-color: red;
+    p{
+        font-weight: 500;
+    }
+}
+
+//Herencia
+
+%mensaje {
+    border: 1px solid red;
+    padding: 10px;
+    color: white;
+}
+
+.message {
+    @extend %mensaje;
+    border-color: green;
+}
+
+//Operadores
+
+.article {
+    width: math.div(600px, 300px) * 100%;
+}
