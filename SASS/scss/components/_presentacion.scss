@@ -1,6 +1,6 @@
 #nombre {
     height: 950px;
-    background-image: url("../images/IMG_8605.JPG");
+    background-image: url("../../images/IMG_8605.JPG");
     background-size: cover;
     background-position: center;
     font-size: 24px;
@@ -8,4 +8,22 @@
     text-align: center;
     color: white;
     display: flex;
+}
+
+#nombre h3 {
+    font-size: 40px;
+}
+
+
+/*Que sea full-screen*/
+.wrap {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.logo {
+    width: 3%;
+    height: auto;
+    margin-right: 2%;
 }

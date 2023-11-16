@@ -1,54 +1,44 @@
-@use 'components/_margen';
-@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
 body {
-    color: blue;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-@import "components/footer";
-
-//Mixing
-
-@mixin large-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    /*Color de la línea*/
+    border: none;
+    /*Elimina borde o línea predeterminada*/
 }
 
-.titulos {
-    @include large-text;
-    padding: 4px;
-    margin: 20px;
+h1 {
+    font-size: 50px;
 }
 
-//Nesting
 
-.golden {
-    a {
-        color: white;
-    }
-    background-color: red;
-    p{
-        font-weight: 500;
-    }
+h2 {
+    text-align: center;
 }
 
-//Herencia
-
-%mensaje {
-    border: 1px solid red;
-    padding: 10px;
-    color: white;
+.datos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
 }
 
-.message {
-    @extend %mensaje;
-    border-color: green;
-}
+@import "components/_presentacion";
+@import "components/_mistrabajos";
+@import "components/_sobremi";
+@import "components/_contacto";
+@import "components/_footer";
 
-//Operadores
-
-.article {
-    width: math.div(600px, 300px) * 100%;
-}

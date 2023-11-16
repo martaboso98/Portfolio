@@ -1,0 +1,77 @@
+#mistrabajos {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.wrap2 {
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+#mistrabajos h2 {
+    font-size: 40px;
+}
+
+#mistrabajos p {
+    margin-bottom: 100px;
+}
+
+.trabajos {
+    background-color: black;
+    width: 90%;
+}
+
+.imagenes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-container {
+    /*Ajusta el ancho del contenedor de cada imagen*/
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Transición imágenes mis trabajos*/
+.image:hover {
+    filter: opacity(.5);
+    transform: scale(1.1);
+}
+
+/*Para cuando haga hover aparezca haz click*/
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+}
+
+.image-container:hover .hover-text {
+    display: block;
+}
+
+/*Fin transiciones*/
+
+@media (max-width: 902px) {
+    .imagenes {
+        display: block;
+        /*Vertical*/
+    }
+
+    .image-container {
+        width: 80%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        /*Centra horizontalmente*/
+    }
+}

@@ -1,0 +1,152 @@
+#contacto {
+    padding: 20px;
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+#contacto h3 {
+    font-size: 40px;
+}
+
+.textoContacto {
+    width: 40%;
+    margin-left: 8%;
+    /* Ajusta el margen entre los elementos según sea necesario */
+    text-align: start;
+}
+
+.dibujo {
+    width: 80%;
+    margin-left: -8%;
+}
+
+/* Formulario */
+
+.formulario {
+    width: 40%;
+    font-size: 28px;
+    text-align: start;
+    margin-left: -2%;
+    font-weight: bold;
+}
+
+.elem-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.elem-group input[type="text"],
+.elem-group input[type="email"] { 
+    border: none;
+    border-bottom: 2px solid #000; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+    width: 70%; 
+    background: transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+.elem-group textarea {
+    width: 66%;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+}
+
+.botonEnviar {
+    color: rgb(255, 153, 0);
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+@media (max-width: 902px) {
+    
+    .formulario {
+        width: 20%;
+        font-size: 20px;
+        text-align: start;
+        margin: auto;
+        font-weight:300;
+    }
+    
+    .elem-group input[type="text"],
+    .elem-group input[type="email"] { 
+        border: none;
+        border-bottom: 1px solid #000; 
+        padding-bottom: 5px; 
+        margin-bottom: 15px; 
+        width: 70%; 
+        background: transparent;
+        transition: border-bottom-color 0.3s;
+    }
+    
+    .elem-group textarea {
+        width: 66%;
+        height: 60px; /* Ajusta la altura según tus necesidades */
+        padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+    }
+    
+    .botonEnviar {
+        color: rgb(255, 153, 0);
+        border: none;
+        background: transparent;
+        font-size: 20px;
+        margin-top: 1%;
+        font-weight:300;
+    }
+}
+
+/* Fin formulario */
+
+.contactar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 902px) {
+    
+    #contacto h3 {
+        font-size: 25px;
+    }
+    
+    .textoContacto {
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+    }
+    
+    .formulario {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .dibujo {
+        width: 100%;
+        margin: 0;
+        margin-top: -15%;
+    }
+    
+    .contactar {
+        display: block;
+    }
+    
+    canvas {
+        width: 50%;
+        height: 50%;
+    }
+}
