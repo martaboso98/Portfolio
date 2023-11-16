@@ -13,7 +13,7 @@ body {
 
 hr {
     height: 1px;
-    width: 50%;
+    width: 100%;
     background-color: white;
     /*Color de la línea*/
     border: none;
@@ -52,11 +52,6 @@ header {
 
 #nombre h3 {
     font-size: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
 .logo {
@@ -330,3 +325,58 @@ ul {
 li {
     margin-bottom: 1%;
 }
+
+.carrousel {
+    width: 100%;
+    padding: 5em;
+    overflow: hidden;
+}
+
+.carrousel .grande {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;   
+    padding: 2em;
+    transition: all 5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .img {
+    width: calc(100% / 2);
+    min-height: 10vh;
+    margin-right: 1%;
+}
+
+.fotos {
+    box-shadow: 0 0 10px rgb(0, 0, 0) 
+}
+
+.carrousel .puntos {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 1em 0 0;
+}
+
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(18, 18, 18);
+    margin: 1em 1em 0;
+}
+
+.carrousel .punto.activo {
+    background-color: rgb(245, 245, 245);
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
