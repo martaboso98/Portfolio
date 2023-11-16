@@ -1,3 +1,19 @@
+#sobremi {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+#sobremi h2 {
+    padding: 3%;
+    color: rgb(255, 153, 0);
+}
+
+#sobremi h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
 .carrousel {
     width: 100%;
     padding: 5em;
@@ -52,18 +68,27 @@ a:visited {
     text-decoration: none;
 }
 
-#sobremi h2 {
-    padding: 3%;
-    color: rgb(255, 153, 0);
-}
+@media (max-width: 902px) {
+    .carrousel {
+        padding: 2em;
+        overflow: visible; /*Imágenes sobresalgan del contenedor*/
+    }
 
-#sobremi h3 {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-}
+    .carrousel .grande {
+        flex-flow: column nowrap; /*Columna para imágenes una debajo de otra */
+        padding: 1em; 
+        transform: none; /*Elimino la transformación para que las imágenes no se desplacen horizontalmente*/
+    }
 
-#sobremi {
-    background-color: rgb(48, 48, 48);
-    color: white;
+    .carrousel .img {
+        width: 100%; /*Hago que las imágenes ocupen todo el ancho disponible*/
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+
+    /*Ocultar los puntos y punto en la versión móvil*/
+    .carrousel .puntos,
+    .carrousel .punto {
+        display: none; 
+    }
 }

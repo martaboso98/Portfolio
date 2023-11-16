@@ -11,32 +11,12 @@ body {
   padding: 0;
 }
 
-hr {
-  height: 1px;
-  width: 100%;
-  background-color: white;
-  /*Color de la línea*/
-  border: none;
-  /*Elimina borde o línea predeterminada*/
-}
-
 h1 {
   font-size: 50px;
 }
 
 h2 {
   text-align: center;
-}
-
-.datos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 40px;
 }
 
 #nombre {
@@ -70,6 +50,46 @@ h2 {
   margin-right: 2%;
 }
 
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  /*Color de la línea*/
+  border: none;
+  /*Elimina borde o línea predeterminada*/
+}
+
+.datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 902px) {
+  #nombre h3 {
+    font-size: 25px;
+  }
+  .logo {
+    width: 8%;
+    height: auto;
+    margin-right: 2%;
+  }
+  hr {
+    height: 1px;
+  }
+  .datos {
+    display: block;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 #mistrabajos {
   text-align: center;
   padding: 30px;
@@ -77,6 +97,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
+  margin-top: 2%;
 }
 
 .wrap2 {
@@ -112,10 +133,13 @@ h2 {
   /*Ajusta el ancho del contenedor de cada imagen*/
   width: 100%;
   position: relative;
+  margin-right: 2%;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /*Transición imágenes mis trabajos*/
@@ -146,17 +170,37 @@ h2 {
 
 /*Fin transiciones*/
 @media (max-width: 902px) {
+  #mistrabajos p {
+    margin-bottom: 20%;
+    margin-top: 10%;
+  }
   .imagenes {
     display: block;
     /*Vertical*/
   }
   .image-container {
     width: 80%;
-    margin-bottom: 20px;
     margin: 0 auto;
+    margin-bottom: 10%;
     /*Centra horizontalmente*/
   }
 }
+#sobremi {
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+#sobremi h2 {
+  padding: 3%;
+  color: rgb(255, 153, 0);
+}
+
+#sobremi h3 {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+}
+
 .carrousel {
   width: 100%;
   padding: 5em;
@@ -232,22 +276,31 @@ a:visited {
   text-decoration: none;
 }
 
-#sobremi h2 {
-  padding: 3%;
-  color: rgb(255, 153, 0);
+@media (max-width: 902px) {
+  .carrousel {
+    padding: 2em;
+    overflow: visible; /*Imágenes sobresalgan del contenedor*/
+  }
+  .carrousel .grande {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; /*Columna para imágenes una debajo de otra */
+    padding: 1em;
+    -webkit-transform: none;
+            transform: none; /*Elimino la transformación para que las imágenes no se desplacen horizontalmente*/
+  }
+  .carrousel .img {
+    width: 100%; /*Hago que las imágenes ocupen todo el ancho disponible*/
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+  /*Ocultar los puntos y punto en la versión móvil*/
+  .carrousel .puntos,
+  .carrousel .punto {
+    display: none;
+  }
 }
-
-#sobremi h3 {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: justify;
-}
-
-#sobremi {
-  background-color: rgb(48, 48, 48);
-  color: white;
-}
-
 #contacto {
   padding: 20px;
 }
@@ -313,39 +366,6 @@ a:visited {
   font-weight: bold;
 }
 
-@media (max-width: 902px) {
-  .formulario {
-    width: 20%;
-    font-size: 20px;
-    text-align: start;
-    margin: auto;
-    font-weight: 300;
-  }
-  .elem-group input[type=text],
-  .elem-group input[type=email] {
-    border: none;
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    width: 70%;
-    background: transparent;
-    -webkit-transition: border-bottom-color 0.3s;
-    transition: border-bottom-color 0.3s;
-  }
-  .elem-group textarea {
-    width: 66%;
-    height: 60px; /* Ajusta la altura según tus necesidades */
-    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
-  }
-  .botonEnviar {
-    color: rgb(255, 153, 0);
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    margin-top: 1%;
-    font-weight: 300;
-  }
-}
 /* Fin formulario */
 .contactar {
   display: -webkit-box;
@@ -375,6 +395,37 @@ canvas {
 }
 
 @media (max-width: 902px) {
+  .formulario {
+    width: 100%;
+    margin-left: 15%;
+    font-size: 20px;
+    text-align: start;
+    font-weight: 300;
+  }
+  .elem-group input[type=text],
+  .elem-group input[type=email] {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    width: 70%;
+    background: transparent;
+    -webkit-transition: border-bottom-color 0.3s;
+    transition: border-bottom-color 0.3s;
+  }
+  .elem-group textarea {
+    width: 66%;
+    height: 60px; /* Ajusta la altura según tus necesidades */
+    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+  }
+  .botonEnviar {
+    color: rgb(255, 153, 0);
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    margin-top: 1%;
+    font-weight: 300;
+  }
   #contacto h3 {
     font-size: 25px;
   }
@@ -382,10 +433,6 @@ canvas {
     width: 100%;
     margin: 0;
     text-align: justify;
-  }
-  .formulario {
-    width: 100%;
-    margin: 0;
   }
   .dibujo {
     width: 100%;

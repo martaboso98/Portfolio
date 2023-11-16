@@ -14,7 +14,6 @@
     font-size: 40px;
 }
 
-
 /*Que sea full-screen*/
 .wrap {
     width: 90%;
@@ -26,4 +25,42 @@
     width: 3%;
     height: auto;
     margin-right: 2%;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    /*Color de la línea*/
+    border: none;
+    /*Elimina borde o línea predeterminada*/
+}
+
+.datos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media (max-width: 902px) {
+    #nombre h3 {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 8%;
+        height: auto;
+        margin-right: 2%;
+    }
+
+    hr {
+        height: 1px;
+    }
+
+    .datos {
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
 }

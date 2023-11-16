@@ -3,6 +3,7 @@
     padding: 30px;
     display: flex;
     margin-bottom: 100px;
+    margin-top: 2%;
 }
 
 .wrap2 {
@@ -34,7 +35,9 @@
     /*Ajusta el ancho del contenedor de cada imagen*/
     width: 100%;
     position: relative;
+    margin-right: 2%;;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 /*Transición imágenes mis trabajos*/
@@ -63,6 +66,11 @@
 /*Fin transiciones*/
 
 @media (max-width: 902px) {
+    #mistrabajos p {
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+
     .imagenes {
         display: block;
         /*Vertical*/
@@ -70,8 +78,8 @@
 
     .image-container {
         width: 80%;
-        margin-bottom: 20px;
         margin: 0 auto;
+        margin-bottom: 10%;
         /*Centra horizontalmente*/
     }
 }

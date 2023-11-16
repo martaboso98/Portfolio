@@ -11,15 +11,6 @@ body {
     padding: 0;
 }
 
-hr {
-    height: 1px;
-    width: 100%;
-    background-color: white;
-    /*Color de la línea*/
-    border: none;
-    /*Elimina borde o línea predeterminada*/
-}
-
 h1 {
     font-size: 50px;
 }
@@ -27,13 +18,6 @@ h1 {
 
 h2 {
     text-align: center;
-}
-
-.datos {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 40px;
 }
 
 @import "components/_presentacion";
