@@ -25,7 +25,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;   
+    align-items: center;
     padding: 2em;
     transition: all 5s ease;
     transform: translateX(0%);
@@ -38,7 +38,7 @@
 }
 
 .fotos {
-    box-shadow: 0 0 10px rgb(0, 0, 0) 
+    box-shadow: 0 0 10px rgb(0, 0, 0)
 }
 
 .carrousel .puntos {
@@ -68,20 +68,64 @@ a:visited {
     text-decoration: none;
 }
 
+@media (max-width: 1280px) {
+    
+    #sobremi h3 {
+        font-size: 25px;
+    }
+    
+    .carrousel {
+        width: 100%;
+        padding: 2em; 
+    }
+    
+    .carrousel .grande {
+        width: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3em; 
+        transition: all 3s ease;
+        transform: translateX(0%);
+    }
+    
+    .carrousel .img {
+        width: 80%; /* Hacer las imágenes ocupar el 100% del contenedor */
+        height: auto; /* Ajusta la altura automáticamente según el ancho */
+    }
+    
+    .carrousel .puntos {
+        padding: 1em; 
+    }
+    
+    .carrousel .punto {
+        width: 1.5em;
+        height: 1.5em; 
+        margin: 1em 0.5em 0; 
+    }
+    
+}
+
 @media (max-width: 902px) {
     .carrousel {
         padding: 2em;
-        overflow: visible; /*Imágenes sobresalgan del contenedor*/
+        overflow: visible;
+        /*Imágenes sobresalgan del contenedor*/
     }
 
     .carrousel .grande {
-        flex-flow: column nowrap; /*Columna para imágenes una debajo de otra */
-        padding: 1em; 
-        transform: none; /*Elimino la transformación para que las imágenes no se desplacen horizontalmente*/
+        width: 100%;
+        flex-flow: column nowrap;
+        /*Columna para imágenes una debajo de otra */
+        padding: 1em;
+        transform: none;
+        /*Elimino la transformación para que las imágenes no se desplacen horizontalmente*/
     }
 
     .carrousel .img {
-        width: 100%; /*Hago que las imágenes ocupen todo el ancho disponible*/
+        width: 100%;
+        /*Hago que las imágenes ocupen todo el ancho disponible*/
         margin-right: 0;
         margin-bottom: 4%;
     }
@@ -89,6 +133,6 @@ a:visited {
     /*Ocultar los puntos y punto en la versión móvil*/
     .carrousel .puntos,
     .carrousel .punto {
-        display: none; 
+        display: none;
     }
 }

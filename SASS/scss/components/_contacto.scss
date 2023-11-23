@@ -81,7 +81,28 @@ canvas {
 
 }
 
+@media (max-width: 1345px) {
+
+    .formulario {
+        font-size: 18px;
+    }
+
+    #contacto h3 {
+        font-size: 35px;
+    }
+
+    #contacto {
+        padding: 40px;
+    }
+
+}
+
 @media (max-width: 902px) {
+
+    #contacto h3 {
+        font-size: 35px;
+        padding: 5%;
+    }
 
     .formulario {
         width: 100%; 
@@ -141,4 +162,8 @@ canvas {
         width: 50%;
         height: 50%;
     }
+}
+
+.naranja {
+    color: rgb(255, 153, 0);
 }

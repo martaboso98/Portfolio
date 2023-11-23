@@ -12,3 +12,13 @@ ul {
 li {
     margin-bottom: 1%;
 }
+
+.mifirma {
+    width: 8%;
+}
+
+@media (max-width: 902px) {
+    .mifirma {
+        width: 15%;
+    }
+}
