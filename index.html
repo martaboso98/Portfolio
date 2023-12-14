@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script defer src="js/carousel.js" ></script>
+    <script defer src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -29,7 +29,8 @@
                 <div class="logos">
                     <a href="https://www.linkedin.com/in/marta-borreguero-soria-28641a1a5/"><img src="images/lk.png"
                             class="logo" alt="linkedin"></a>
-                    <a href="https://www.facebook.com/martaboso98"><img src="images/fb.png" class="logo" alt="facebook"></a>
+                    <a href="https://www.facebook.com/martaboso98"><img src="images/fb.png" class="logo"
+                            alt="facebook"></a>
                     <a href="https://www.instagram.com/martaboso98/"><img src="images/insta.png" class="logo"
                             alt="instagram"></a>
                     <a href="https://github.com/martaboso98"><img src="images/github.png" class="logo" alt="github"></a>
@@ -79,9 +80,11 @@
         <article id="sobremi">
             <h2>Más sobre mí</h2>
             <h3>Este espacio es un resumen de mi vida y pasiones:
-                desde partidos del Sevilla FC hasta momentos relajados en la playa. Siempre me encontrarás con una cámara en mano, 
-                y con ganas de ir al gimnasio. Me gusta compartir momentos con mis amigos y, si son viajando, mucho mejor. 
-                También soy una amante de la cocina. 
+                desde partidos del Sevilla FC hasta momentos relajados en la playa. Siempre me encontrarás con una
+                cámara en mano,
+                y con ganas de ir al gimnasio. Me gusta compartir momentos con mis amigos y, si son viajando, mucho
+                mejor.
+                También soy una amante de la cocina.
                 ¡Bienvenido a mi mundo!</h3>
             <div class="carrousel">
                 <div class="grande">
@@ -99,7 +102,7 @@
                     <li class="punto"></li>
                 </ul>
             </div>
-            
+
         </article>
 
     </section>
@@ -111,17 +114,18 @@
 
             <div class="contactar">
                 <div class="textoContacto">
-                    <h3>Si quieres <span class="naranja">contactar</span> conmigo para un proyecto, no dudes en hablarme. </h3>
+                    <h3>Si quieres <span class="naranja">contactar</span> conmigo para un proyecto, no dudes en
+                        hablarme. </h3>
                 </div>
 
                 <div class="dibujo">
                     <canvas id="canvas"></canvas>
                 </div>
                 <div class="formulario">
-                    <form action="contacto.php" method="post">
+                    <form action="mailto:martabo_so@hotmail.com" method="post" enctype="text/plain">
                         <div class="elem-group">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
+                            <input type="text" id="name" name="visitor_name" pattern="[A-Za-z\s]{3,20}" required>
                         </div>
                         <div class="elem-group">
                             <label for="email">Email</label>
@@ -131,12 +135,12 @@
                         <div class="elem-group">
                             <label for="message">Mensaje</label>
                             <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí."
-                                required>
-                        </textarea>
+                                required></textarea>
                         </div>
                         <button type="submit" class="botonEnviar">Enviar</button>
                     </form>
                 </div>
+
             </div>
         </article>
     </section>
@@ -156,7 +160,7 @@
             <a href="#mistrabajos">
                 <li>Mis trabajos recientes</li>
             </a>
-            <a href="cv_marta.pdf" download>
+            <a href="cv_martaborreguero.pdf" download>
                 <li>CV descargable</li>
             </a>
         </ul>
